@@ -76,14 +76,18 @@ This section has been amended by:
  Required Majority
 *******************
 
+All votes in an RFC MUST have an "Abstain" option, which is treated identically
+to not casting a vote in terms of calculating results, but is used as a signal
+that eligible voters explicitly decline to vote one way or the other on a question
+rather than simply not having noticed the RFC.
+
 The primary vote of an RFC, determining overall acceptance of the proposal, MUST
 be a clearly phrased binary question with the voting options "Yes", "No", and
 "Abstain". The primary vote SHOULD be phrased "Implement $feature as outlined
 in the RFC?" to avoid ambiguity. For a primary vote to be accepted a 2/3
-majority from the non-"Abstain" votes is required. This means that the number
-of "Yes" votes must be greater than or equal to the number of "No" votes
-multiplied by two. "Abstain" votes do not have any effect on the outcome of the
-vote.
+majority of "Yes" votes is required. This means that the number of "Yes"
+votes must be greater than or equal to the number of "No" votes multiplied by
+two.
 
 As an example, an RFC with 8 "Yes", 4 "No", and 9 "Abstain" votes is accepted,
 as the number of "Yes" votes is twice the number of "No" votes and "Abstain"
@@ -97,7 +101,7 @@ two voting options and MAY be decided by simple plurality. This means that
 the voting option with the most votes wins. For binary secondary votes the
 RFC author MAY decide on a higher threshold (up to a 2/3 majority). The
 interpretation of the result of a secondary vote, necessary threshold(s),
-tie-breakers MUST be defined at the start of the voting period.
+and tie-breakers MUST be defined at the start of the voting period.
 
 For procedural reasons, multiple related proposals MAY be combined into one RFC,
 in which case there MAY be multiple primary votes. Combining multiple proposals
