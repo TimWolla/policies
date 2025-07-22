@@ -76,20 +76,32 @@ This section has been amended by:
  Required Majority
 *******************
 
-The primary vote of an RFC, determining overall acceptance of the proposal, may
-only have two voting options and requires a 2/3 majority. This means that the
-number of Yes votes must be greater than or equal to the number of No votes
-multiplied by two.
+The primary vote of an RFC, determining overall acceptance of the proposal, MUST
+be a clearly phrased binary question with the voting options "Yes", "No", and
+"Abstain". The primary vote SHOULD be phrased "Implement $feature as outlined
+in the RFC?" to avoid ambiguity. For a primary vote to be accepted a 2/3
+majority from the non-"Abstain" votes is required. This means that the number
+of "Yes" votes must be greater than or equal to the number of "No" votes
+multiplied by two. "Abstain" votes do not have any effect on the outcome of the
+vote.
 
-Additionally, an RFC may have secondary votes, which are used to decide
-implementation details. Such votes may have more than two voting options and may
-be decided by simple plurality. This means that the voting option with the most
-votes wins. If there are multiple options with the most number of votes, it is
-left at the discretion of the RFC author to choose one of them.
+As an example, an RFC with 8 "Yes", 4 "No", and 9 "Abstain" votes is accepted,
+as the number of "Yes" votes is twice the number of "No" votes and "Abstain"
+votes do not take part in the calculation. An RFC with 5 "Yes", 3 "No", and
+4 "Abstain" votes is not accepted.
 
-For procedural reasons, multiple RFCs may be combined into one, in which case
-there may be multiple primary votes. Combining multiple RFCs into one does not
-allow turning a primary vote into a secondary vote.
+Additionally, an RFC MAY have secondary votes, which are used to decide
+implementation details. The result of secondary votes is void unless the
+corresponding primary vote is accepted. Secondary votes MAY have more than
+two voting options and MAY be decided by simple plurality. This means that
+the voting option with the most votes wins. For binary secondary votes the
+RFC author MAY decide on a higher threshold (up to a 2/3 majority). The
+interpretation of the result of a secondary vote, necessary threshold(s),
+tie-breakers MUST be defined at the start of the voting period.
+
+For procedural reasons, multiple related proposals MAY be combined into one RFC,
+in which case there MAY be multiple primary votes. Combining multiple proposals
+into one RFC MUST NOT be used to turn a primary vote into a secondary vote.
 
 This section has been amended by:
 
