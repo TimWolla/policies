@@ -96,11 +96,13 @@ votes do not take part in the calculation. An RFC with 5 "Yes", 3 "No", and 4
 Additionally, an RFC MAY have secondary votes, which are used to decide
 implementation details. The result of secondary votes is void unless the
 corresponding primary vote is accepted. Secondary votes MAY have more than two
-voting options and MAY be decided by simple plurality. This means that the
-voting option with the most votes wins. For binary secondary votes the RFC
-author MAY decide on a higher threshold (up to a 2/3 majority). The
-interpretation of the result of a secondary vote, necessary threshold(s), and
-tie-breakers MUST be defined at the start of the voting period.
+voting options and MAY be decided by plurality (meaning that the voting option
+with the most votes wins). For secondary votes with two voting options the RFC
+author MAY decide on a higher threshold (up to a 2/3 majority) for an individual
+option. Secondary votes with more than two voting options MAY also be decided
+using the "Single transferable vote" voting system. The voting system used,
+necessary threshold(s), and tie-breakers MUST be defined at the start of the
+voting period.
 
 For procedural reasons, multiple related proposals MAY be combined into one RFC,
 in which case there MAY be multiple primary votes. Combining multiple proposals
