@@ -104,6 +104,11 @@ using the "Single transferable vote" voting system. The voting system used,
 necessary threshold(s), and tie-breakers MUST be defined at the start of the
 voting period.
 
+As an example, a secondary vote using a plurality and having 5 "Foo", 4 "Bar", 8
+"Baz", and 9 "Abstain" votes decided on the "Baz" result, since it has the most
+number of votes excluding the "Abstain" option. It is not necessary to reach 50%
+of the votes ("simple majority").
+
 For procedural reasons, multiple related proposals MAY be combined into one RFC,
 in which case there MAY be multiple primary votes. Combining multiple proposals
 into one RFC MUST NOT be used to turn a primary vote into a secondary vote.
