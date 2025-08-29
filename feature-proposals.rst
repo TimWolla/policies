@@ -13,34 +13,73 @@ community and decide if the community accepts or rejects the idea.
  Proposal Initiation
 *********************
 
-Proposal is formally initiated by creating an RFC on PHP wiki and announcing it
-on the list. If the proposal is a repeated discussion of an existing RFC, with
-or without modification, it still should be announced on the list for
-discussion.
+A proposal is formally initiated by creating an RFC on the PHP Wiki and
+announcing it on the ``internals@lists.php.net`` mailing list. If the proposal
+is a repeated discussion of an existing RFC, with or without modification, it
+MUST still be announced on the list for discussion.
 
-The announcement will be done in a way that's easy to flag & follow, e.g. - by
-``[RFC]`` in the subject line followed by the title of the RFC.
+The official RFC discussion thread MUST use the prefix ``[RFC]`` followed by the
+title of the RFC as the Subject. The email MUST include a link to the Wiki page
+containing the RFC.
 
-The proposal should be initiated by one of its authors. If the proposal is a
-repeated one, re-proposed by somebody else, the proposer should discuss it with
-the original author, if possible, and add himself to the RFC author list before
-proposing it.
-
-If the proposer is not a member of php.net and thus can not create RFCs on the
-wiki, they should recruit one of the members for help or request membership.
+The discussion thread MUST be initiated by one of the RFC's authors. If the
+proposal is a repeated one, re-proposed by somebody else, the proposer MUST
+discuss it with the original author and add themselves to the RFC author list
+before proposing it. If the original RFC authors do not agree or do not respond,
+a new Wiki page containing a RFC with a unique title MUST be created. In this
+case the original RFC's title is commonly suffixed with ``v2`` to indicate the
+relationship with the original RFC.
 
 *******************
  Discussion Period
 *******************
 
-There'd be a minimum of 2 weeks between when an RFC that touches the language is
-brought up on this list and when it's voted on is required. Other RFCs might use
-a smaller timeframe, but it should be at least a week. The effective date will
-not be when the RFC was published on the PHP wiki - but when it was announced on
-``internals@lists.php.net``, by the author, with the intention of voting on it.
-This period can be extended when circumstances warrant it - such as major
-conferences, key people being busy, force major events, or when discussion
-merits it - but should never be less than minimal time.
+Before an RFC may move to the voting phase a minimum discussion period of 2
+weeks (336 hours) MUST have elapsed. The discussion period starts at the time of
+the initial email of the official RFC discussion thread.
+
+When making non-editorial / non-typographical changes to the normative section
+of the RFC text (i.e. to the actual proposal, excluding future scope, rejected
+features and references) the discussion period MUST be extended. The discussion
+period MUST be extended by 2 weeks (336 hours) in case of major changes. It MUST
+be extended by 1 week (168 hours) in case of minor changes. When in doubt, the
+change MUST be treated as a major change. Major and minor changes MUST be
+announced in the official discussion thread, either in a dedicated email
+summarizing a list of changes or in a reply to another email that clearly
+indicates that changes to the RFC text have been made in response to that email.
+Extensions of the discussion period are not cumulative. The new minimum
+discussion period is the current remaining minimum discussion period or the
+extended discussion period calculated from the time of the email announcing the
+changes that extend the discussion period.
+
+As an example: An RFC is announced at 2025-02-01 15:00. The initial minimum
+discussion period ends at 2025-02-15 15:00. On 2025-02-03 16:00 a minor change
+to the RFC text is made. The discussion period is not extended, since the
+remaining period of 12 days is longer than the required extension. On 2025-02-05
+17:00 a major change to the RFC text is made. The minimum discussion period is
+extended to 2025-02-19 17:00. On 2025-02-15 16:00 another minor change is made.
+The minimum discussion period is extended to 2025-02-22 16:00. On 2025-02-21
+13:00 an obvious typo is fixed. The discussion period is not extended.
+
+Major changes to the RFC text include any changes that would lead to a change in
+the implementation, particularly any changes to the proposed semantics or
+syntax, updating the API stub, retitling any voting widget, or adding voting
+widgets. Minor changes to the RFC text include adding new examples, updating
+existing examples, adding additional explanation or clarification, or any other
+changes that are not purely editorial.
+
+The discussion period MAY be extended beyond the required minimum discussion
+period. It SHOULD appropriately be extended in holiday periods or in cases of
+significant activity on the mailing list to allow everyone to catch up with the
+discussion.
+
+After a period of 6 weeks without any email in the official discussion thread,
+the discussion is considered inactive and MUST be restarted with a minimum
+discussion period of 1 week (168 hours) before the RFC may proceed to a vote,
+since it is likely that other RFC discussions are at the top of mind of the
+mailing list participants. After a period of 3 months without any email in the
+official discussion thread, the discussion MUST be restarted with a minimum
+discussion period of 2 weeks (336 hours).
 
 This does not preclude discussion on the merits on any idea or proposal on the
 list without formally submitting it as a proposal, but the discussion time is
@@ -50,23 +89,28 @@ measured only since the formal discussion announcement as described above.
  Voting
 ********
 
-The author decides when it's time to move ahead and call a vote on the RFC. If
-the author feels that there's still healthy discussion going on, they can decide
-not to move ahead to request a vote after the minimal period, but extend it as
-needed. On the other hand, if they feel that the discussion is being derailed -
-they can always move ahead to a vote as long as the minimum discussion time
-elapsed.
+RFC authors MAY start a vote after the minimum discussion period has elapsed.
+The intention of starting the vote MUST be announced at least 2 days (48 hours)
+before the start of the vote in the official discussion thread. RFC authors
+SHOULD NOT announce the start of the vote when the RFC discussion is still
+ongoing and new discussion points are brought forward. Similarly RFC authors
+SHOULD NOT proceed with an announced vote if new discussion points are brought
+forward after the voting announcement. If major or minor changes to the RFC text
+are made after announcing the vote, the discussion period MUST be extended and a
+new vote MUST be announced when the RFC is ready for voting after the new
+minimum discussion period has elapsed.
 
-The vote is announced on the mailing list in a separate thread by sending an
-email with the subject ``[VOTE]``. It should reference the RFCs being voted on
-and if there are different options discussed, explain these options. It should
-also contain the URL of the page where the vote is taking place.
-
-Votes should be open for two weeks at minimum, at the authors discretion this
-may be extended, for example during holiday periods.
-
-A valid voting period must be declared when voting is started and must not be
-changed during the vote.
+The actual start of the vote MUST be announced on the mailing list in a separate
+thread with a ``[VOTE]`` prefix followed by the RFC title as the Subject. The
+email MUST include a link to the Wiki page of the RFC and to the mailing list
+archives of the discussion thread. It furthermore MUST clearly specify the
+voting formalities, such as the number of votes that can be cast, the
+interpretation of the voting results and the end date of the voting. The end
+date MUST be specified with minute-precision. The voting period MUST be open for
+at least two weeks (336 hours). The voting period MAY be extended as necessary
+to accommodate holiday periods. Due to the significance of the end-of-year
+holidays for a majority of the world, the voting period MUST NOT end in the
+period between December, 17th 00:00 UTC and January, 10th 00:00 UTC.
 
 This section has been amended by:
 
