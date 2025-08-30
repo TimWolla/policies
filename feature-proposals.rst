@@ -26,7 +26,7 @@ The discussion thread MUST be initiated by one of the RFC's authors. If the
 proposal is a repeated one, re-proposed by somebody else, the proposer MUST
 discuss it with the original author and add themselves to the RFC author list
 before proposing it. If the original RFC authors do not agree or do not respond,
-a new Wiki page containing a RFC with a unique title MUST be created. In this
+a new Wiki page containing an RFC with a unique title MUST be created. In this
 case the original RFC's title is commonly suffixed with ``v2`` to indicate the
 relationship with the original RFC.
 
