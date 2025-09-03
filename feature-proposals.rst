@@ -20,7 +20,9 @@ MUST still be announced on the list for discussion.
 
 The official RFC discussion thread MUST use the prefix ``[RFC]`` followed by the
 title of the RFC as the Subject. The email MUST include a link to the Wiki page
-containing the RFC.
+containing the RFC. The link to the mailing list archives of the discussion
+thread MUST be added to the RFC as soon as possible and no later than the
+announcement of the start of the vote.
 
 The discussion thread MUST be initiated by one of the RFC's authors. If the
 proposal is a repeated one, re-proposed by somebody else, the proposer MUST
@@ -110,7 +112,9 @@ date MUST be specified with minute-precision. The voting period MUST be open for
 at least two weeks (336 hours). The voting period MAY be extended as necessary
 to accommodate holiday periods. Due to the significance of the end-of-year
 holidays for a majority of the world, the voting period MUST NOT end in the
-period between December, 17th 00:00 UTC and January, 10th 00:00 UTC.
+period between December, 17th 00:00 UTC and January, 10th 00:00 UTC. The link to
+the mailing list archives of the voting thread MUST be added to the RFC as soon
+as possible and no later than the announcement of the results of the vote.
 
 This section has been amended by:
 
