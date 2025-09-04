@@ -14,9 +14,7 @@ community and decide if the community accepts or rejects the idea.
 *********************
 
 A proposal is formally initiated by creating an RFC on the PHP Wiki and
-announcing it on the ``internals@lists.php.net`` mailing list. If the proposal
-is a repeated discussion of an existing RFC, with or without modification, it
-MUST still be announced on the list for discussion.
+announcing it on the ``internals@lists.php.net`` mailing list.
 
 The official RFC discussion thread MUST use the prefix ``[RFC]`` followed by the
 title of the RFC as the Subject. The email MUST include a link to the Wiki page
