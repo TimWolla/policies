@@ -109,10 +109,11 @@ interpretation of the voting results and the end date of the voting. The end
 date MUST be specified with minute-precision. The voting period MUST be open for
 at least two weeks (336 hours). The voting period MAY be extended as necessary
 to accommodate holiday periods. Due to the significance of the end-of-year
-holidays for a majority of the world, the voting period MUST NOT end in the
-period between December, 17th 00:00 UTC and January, 10th 00:00 UTC. The link to
-the mailing list archives of the voting thread MUST be added to the RFC as soon
-as possible and no later than the announcement of the results of the vote.
+holidays for a majority of the world, the voting period MUST NOT start and MUST
+NOT end in the period between December, 17th 00:00 UTC and January, 10th 00:00
+UTC. The link to the mailing list archives of the voting thread MUST be added to
+the RFC as soon as possible and no later than the announcement of the results of
+the vote.
 
 This section has been amended by:
 
