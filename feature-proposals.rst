@@ -60,10 +60,10 @@ period is not reset.
 
 Major changes to the RFC text include any changes that would lead to a change in
 the implementation, particularly any changes to the proposed semantics or
-syntax, updating the API stub, retitling any voting widget, or adding voting
-widgets. Minor changes to the RFC text include adding new examples, updating
-existing examples, adding additional explanation or clarification, or any other
-changes that are not purely editorial.
+syntax, updating the API stub, adding, changing or removing any voting widget.
+Minor changes to the RFC text include adding new examples, updating existing
+examples, adding additional explanation or clarification, or any other changes
+that are not purely editorial.
 
 The discussion phase MAY be extended beyond the required cooldown period. It
 SHOULD appropriately be extended in holiday periods or in cases of significant
