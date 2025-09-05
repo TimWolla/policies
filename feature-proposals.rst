@@ -105,8 +105,9 @@ announcement of the results of the vote.
 
 The email MUST furthermore clearly specify the voting formalities, such as the
 number of votes that can be cast, the interpretation of the voting results and
-the end date of the voting. The end date MUST be specified with
-minute-precision. The voting period MUST be open for at least two weeks (336
+the end date of the voting. The end date MUST be specified with minute-precision
+and is not part of the voting period, all votes must be cast before the
+specified end date. The voting period MUST be open for at least two weeks (336
 hours). The voting period MAY be extended as necessary (e.g. to accommodate
 holiday periods).
 
