@@ -99,17 +99,34 @@ period has elapsed.
 The actual start of the vote MUST be announced on the mailing list in a separate
 thread with a ``[VOTE]`` prefix followed by the RFC title as the Subject. The
 email MUST include a link to the Wiki page of the RFC and to the mailing list
-archives of the discussion thread. It furthermore MUST clearly specify the
-voting formalities, such as the number of votes that can be cast, the
-interpretation of the voting results and the end date of the voting. The end
-date MUST be specified with minute-precision. The voting period MUST be open for
-at least two weeks (336 hours). The voting period MAY be extended as necessary
-to accommodate holiday periods. Due to the significance of the end-of-year
-holidays for a majority of the world, the voting period MUST NOT start and MUST
-NOT end in the period between December, 17th 00:00 UTC and January, 10th 00:00
-UTC. The link to the mailing list archives of the voting thread MUST be added to
-the RFC as soon as possible and no later than the announcement of the results of
-the vote.
+archives of the discussion thread. The link to the mailing list archives of the
+voting thread MUST be added to the RFC as soon as possible and no later than the
+announcement of the results of the vote.
+
+The email MUST furthermore clearly specify the voting formalities, such as the
+number of votes that can be cast, the interpretation of the voting results and
+the end date of the voting. The end date MUST be specified with
+minute-precision. The voting period MUST be open for at least two weeks (336
+hours). The voting period MAY be extended as necessary (e.g. to accommodate
+holiday periods).
+
+Due to the significance of the end-of-year holidays for a majority of the world,
+the voting period MUST NOT start and MUST NOT end in the period between
+December, 17th 00:00 UTC and January, 10th 00:00 UTC.
+
+After the voting period started, including after the vote closed and the RFC is
+either accepted or declined, there MUST NOT be any further major or minor
+changes to the RFC text and making editorial changes SHOULD be avoided for the
+avoidance of doubt. The voting formalities (including the voting period) MUST
+NOT be changed after the vote opened. The voting period MAY be canceled within
+the first 2 days (48 hours) in case of severe issues with the RFC. Canceling a
+vote is treated as a major change and a cooldown period of 2 weeks (336 hours)
+is required before a new vote may be started. The title of all voting widgets
+MUST be changed to invalidate any votes that have been cast (e.g. by adding the
+suffix “(Restart)”).
+
+If issues with an accepted RFC are noticed during implementation, an errata
+section explaining the necessary changes SHOULD be added.
 
 This section has been amended by:
 
